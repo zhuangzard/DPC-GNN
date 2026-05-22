@@ -1,0 +1,21 @@
+{
+  "tissue": "cartilage",
+  "E_Pa": 500000.0,
+  "E_kPa": 500.0,
+  "nu": 0.45,
+  "rho": 1100.0,
+  "beam_Lx_m": 0.1,
+  "epochs": 3000,
+  "best_epoch": 3000,
+  "best_loss": -0.39089441299438477,
+  "tip_disp_mm": 32.94919431209564,
+  "expected_tip_mm": 8.09325,
+  "relative_error_pct": 307.11944289495125,
+  "J_min": 0.8023532032966614,
+  "J_max": 1.3803503513336182,
+  "n_inverted": 0,
+  "training_time_s": 420.55436611175537,
+  "N_nodes": 1029,
+  "N_elements": 3600,
+  "params": 161731
+}

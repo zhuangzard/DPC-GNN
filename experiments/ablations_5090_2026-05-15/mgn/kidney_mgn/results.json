@@ -1,0 +1,22 @@
+{
+  "tissue": "kidney",
+  "ablation": "mgn_baseline",
+  "E_Pa": 10000.0,
+  "E_kPa": 10.0,
+  "nu": 0.45,
+  "rho": 1050.0,
+  "beam_Lx_m": 0.03,
+  "epochs": 3000,
+  "best_epoch": 3000,
+  "best_loss": -0.003927200101315975,
+  "tip_disp_mm": 13.882549479603767,
+  "expected_tip_mm": 3.128776874999999,
+  "relative_error_pct": 343.7053210962438,
+  "J_min": 0.4613167941570282,
+  "J_max": 2.6542391777038574,
+  "n_inverted": 0,
+  "training_time_s": 114.13423275947571,
+  "N_nodes": 1029,
+  "N_elements": 3600,
+  "params": 238915
+}

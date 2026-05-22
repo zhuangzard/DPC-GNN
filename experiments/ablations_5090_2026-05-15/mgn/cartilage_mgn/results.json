@@ -1,0 +1,22 @@
+{
+  "tissue": "cartilage",
+  "ablation": "mgn_baseline",
+  "E_Pa": 500000.0,
+  "E_kPa": 500.0,
+  "nu": 0.3,
+  "rho": 1100.0,
+  "beam_Lx_m": 0.1,
+  "epochs": 3000,
+  "best_epoch": 2715,
+  "best_loss": -0.004931689705699682,
+  "tip_disp_mm": 6.946377456188202,
+  "expected_tip_mm": 8.09325,
+  "relative_error_pct": 14.17072923500198,
+  "J_min": 0.9770969748497009,
+  "J_max": 1.0232291221618652,
+  "n_inverted": 0,
+  "training_time_s": 116.0451557636261,
+  "N_nodes": 400,
+  "N_elements": 1200,
+  "params": 238915
+}

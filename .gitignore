@@ -1,0 +1,54 @@
+# DPC-GNN .gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# PyTorch / training scratch
+# (Note: experiments/ contains shipped result artefacts and is allow-listed below.)
+*.ckpt
+runs/
+
+# LaTeX intermediate artefacts
+*.aux
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+*.out
+
+# macOS noise
+.DS_Store
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local AI-assistant worktrees (any tool)
+.ai/
+.tooling/
+
+# Secrets — never commit
+.env
+.env.local
+*.key
+credentials.json
+secrets.json
+
+# Allow-list: ship trained model checkpoints + training logs under experiments/
+!experiments/**/*.pt
+!experiments/**/*.pth
+!experiments/**/*.log

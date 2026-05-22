@@ -1,0 +1,22 @@
+[17:31:45] Starting sweep...
+[17:31:45] seed=42  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed42.log
+[17:31:45] seed=100  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed100.log
+[17:40:01] seed=123  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed123.log
+[17:40:01] seed=456  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed456.log
+[17:47:00] seed=789  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed789.log
+[17:47:00] seed=999  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed999.log
+[17:54:03] seed=1000  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed1000.log
+[17:54:03] seed=1337  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed1337.log
+[18:00:56] seed=2024  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed2024.log
+[18:00:56] seed=2026  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed2026.log
+[18:08:00] seed=3407  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed3407.log
+[18:08:00] seed=7777  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed7777.log
+[18:14:59] seed=8888  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed8888.log
+[18:14:59] seed=11111  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed11111.log
+[18:22:01] seed=12345  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed12345.log
+[18:22:01] seed=31415  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed31415.log
+[18:29:01] seed=54321  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed54321.log
+[18:29:01] seed=66666  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed66666.log
+[18:36:00] seed=99999  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed99999.log
+[18:36:00] seed=271828  → /tmp/dpc_option_b/cartilage_nu045/cartilage_seed271828.log
+[18:43:02] Sweep complete — launched=20, skipped=0

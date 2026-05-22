@@ -1,0 +1,22 @@
+{
+  "tissue": "myocardium",
+  "ablation": "mgn_baseline",
+  "E_Pa": 30000.0,
+  "E_kPa": 30.0,
+  "nu": 0.4,
+  "rho": 1060.0,
+  "beam_Lx_m": 0.03,
+  "epochs": 3000,
+  "best_epoch": 2986,
+  "best_loss": -0.0012872118968516588,
+  "tip_disp_mm": 1.2720219092443585,
+  "expected_tip_mm": 1.0528582499999997,
+  "relative_error_pct": 20.816065148785118,
+  "J_min": 0.9640853404998779,
+  "J_max": 1.0368115901947021,
+  "n_inverted": 0,
+  "training_time_s": 122.25067901611328,
+  "N_nodes": 400,
+  "N_elements": 1200,
+  "params": 238915
+}

@@ -1,0 +1,76 @@
+============================================================
+Poiseuille Flow Validation — SPH-GNN
+============================================================
+[Poiseuille] Device: cuda
+[sph_domain] Generating portal vein domain:
+  Geometry: D=7.0mm, L=80.0mm, R=3.5mm
+  Particles: dp=2.00mm, h=2.40mm, cutoff=4.80mm
+  Fluid particles: 78
+  Wall particles:  880
+  Inlet particles: 2, Outlet particles: 2
+  Total particles: 962
+  Building neighbor graph (cutoff=4.80mm)...
+  Neighbor graph: 22814 directed edges, avg 23.7 neighbors/particle
+  Feature normalization: v_ref=0.0109 m/s, p_ref=1.00 Pa
+[SPH-GNN] Model created:
+  hidden_dim=96, n_mp_layers=5
+  Total: 304,707 | Trainable: 304,707
+  Device: cuda
+  Warm-start: fluid v_z range [0.0045, 0.0053] m/s
+
+[Poiseuille] Training: 500 epochs × 10 steps
+  ΔP=0.500 Pa, dp/dz=-6.250 Pa/m
+  v_max_analytical = 0.0055 m/s
+  Q_analytical = 0.1052 mL/s
+  Supervised target: v_z_max=0.0053 m/s
+  Epoch    1/500: loss=7.7366e-04, |a|_max=4.83e-02, |v_err|=2.41e-06, lr=5.0e-04
+  Epoch   21/500: loss=1.8044e-06, |a|_max=2.66e-03, |v_err|=1.33e-07, lr=5.0e-04
+  Epoch   41/500: loss=1.7055e-06, |a|_max=2.78e-03, |v_err|=1.39e-07, lr=5.0e-04
+  Epoch   61/500: loss=3.1121e-07, |a|_max=1.12e-03, |v_err|=5.58e-08, lr=5.0e-04
+  Epoch   81/500: loss=5.2283e-08, |a|_max=7.81e-04, |v_err|=3.91e-08, lr=5.0e-04
+  Epoch  101/500: loss=3.2271e-08, |a|_max=6.81e-04, |v_err|=3.40e-08, lr=5.0e-04
+  Epoch  121/500: loss=2.8241e-08, |a|_max=6.49e-04, |v_err|=3.26e-08, lr=5.0e-04
+  Epoch  141/500: loss=2.2869e-08, |a|_max=5.76e-04, |v_err|=2.89e-08, lr=5.0e-04
+  Epoch  161/500: loss=1.8189e-08, |a|_max=5.12e-04, |v_err|=2.56e-08, lr=5.0e-04
+  Epoch  181/500: loss=1.4084e-08, |a|_max=4.50e-04, |v_err|=2.24e-08, lr=5.0e-04
+  Epoch  201/500: loss=1.0769e-08, |a|_max=3.92e-04, |v_err|=1.96e-08, lr=5.0e-04
+  Epoch  221/500: loss=8.2422e-09, |a|_max=3.40e-04, |v_err|=1.72e-08, lr=5.0e-04
+  Epoch  241/500: loss=6.3463e-09, |a|_max=2.94e-04, |v_err|=1.49e-08, lr=5.0e-04
+  Epoch  261/500: loss=4.9257e-09, |a|_max=2.54e-04, |v_err|=1.26e-08, lr=5.0e-04
+  Epoch  281/500: loss=3.8532e-09, |a|_max=2.19e-04, |v_err|=1.12e-08, lr=5.0e-04
+  Epoch  301/500: loss=3.0309e-09, |a|_max=1.88e-04, |v_err|=9.31e-09, lr=5.0e-04
+  Epoch  321/500: loss=2.3934e-09, |a|_max=1.62e-04, |v_err|=7.92e-09, lr=5.0e-04
+  Epoch  341/500: loss=1.8934e-09, |a|_max=1.39e-04, |v_err|=6.98e-09, lr=5.0e-04
+  Epoch  361/500: loss=1.4989e-09, |a|_max=1.19e-04, |v_err|=6.05e-09, lr=5.0e-04
+  Epoch  381/500: loss=1.1888e-09, |a|_max=1.01e-04, |v_err|=5.12e-09, lr=5.0e-04
+  Epoch  401/500: loss=9.4486e-10, |a|_max=8.60e-05, |v_err|=4.19e-09, lr=5.0e-04
+  Epoch  421/500: loss=7.5576e-10, |a|_max=7.43e-05, |v_err|=3.73e-09, lr=5.0e-04
+  Epoch  441/500: loss=6.1206e-10, |a|_max=6.69e-05, |v_err|=3.35e-09, lr=5.0e-04
+  Epoch  461/500: loss=5.0552e-10, |a|_max=6.02e-05, |v_err|=3.01e-09, lr=5.0e-04
+  Epoch  481/500: loss=4.3021e-10, |a|_max=5.57e-05, |v_err|=2.79e-09, lr=5.0e-04
+  Epoch  500/500: loss=3.8242e-10, |a|_max=5.28e-05, |v_err|=2.64e-09, lr=5.0e-04
+
+[Poiseuille] Evaluating velocity profile...
+  Running 200 evaluation steps...
+  Q methods: profile-based=0.1028 mL/s, SPH-vol=0.0383 mL/s
+
+[Poiseuille] Results:
+  v_max (GNN):        0.0053 m/s
+  v_max (analytical): 0.0055 m/s
+  Max velocity error: 2.3%
+  Profile L2 error:   0.0%
+  Q (GNN):            0.1028 mL/s
+  Q (analytical):     0.1052 mL/s
+  Flow rate error:    2.3%
+  ✅ Max velocity error 2.3% < 10% target
+  ✅ Flow rate error 2.3% < 5% target
+
+  ✅ VALIDATION PASSED
+  (Note: error metrics improve significantly with more epochs and finer particles)
+
+============================================================
+Summary:
+  v_max error: 2.3%  (target: <10%)
+  Flow rate error: 2.3%  (target: <5%)
+  Best training loss: 3.8242e-10
+============================================================

@@ -1,0 +1,107 @@
+=== MGN baseline: 6 tissues × 5 seeds = 30 runs ===
+[05:14:41] MGN brain seed=42
+[05:14:41] MGN brain seed=123
+[05:14:41] MGN brain seed=456
+[05:14:41] MGN brain seed=789
+[05:16:56] MGN brain seed=2026
+[05:16:56] MGN kidney seed=42
+[05:16:56] MGN kidney seed=123
+[05:16:56] MGN kidney seed=456
+[05:19:04] MGN kidney seed=789
+[05:19:04] MGN kidney seed=2026
+[05:19:04] MGN myocardium seed=42
+[05:19:04] MGN myocardium seed=123
+[05:21:02] MGN myocardium seed=456
+[05:21:02] MGN myocardium seed=789
+[05:21:02] MGN myocardium seed=2026
+[05:21:02] MGN vessel seed=42
+[05:23:08] MGN vessel seed=123
+[05:23:08] MGN vessel seed=456
+[05:23:08] MGN vessel seed=789
+[05:23:08] MGN vessel seed=2026
+[05:24:59] MGN cartilage seed=42
+[05:24:59] MGN cartilage seed=123
+[05:24:59] MGN cartilage seed=456
+[05:24:59] MGN cartilage seed=789
+[05:27:03] MGN cartilage seed=2026
+[05:27:03] MGN bone seed=42
+[05:27:03] MGN bone seed=123
+[05:27:03] MGN bone seed=456
+[05:29:03] MGN bone seed=789
+[05:29:03] MGN bone seed=2026
+=== MGN baseline DONE: Fri May 15 05:29:04 CST 2026 ===
+
+=== Barrier ablation: 3 tissues × 5 seeds × 2 settings = 30 runs ===
+[05:29:04] BAR cartilage seed=42 coef=0
+[05:29:04] BAR cartilage seed=42 coef=100
+[05:30:50] BAR cartilage seed=123 coef=0
+[05:30:50] BAR cartilage seed=123 coef=100
+[05:30:50] BAR cartilage seed=456 coef=0
+[05:30:50] BAR cartilage seed=456 coef=100
+[05:32:40] BAR cartilage seed=789 coef=0
+[05:32:40] BAR cartilage seed=789 coef=100
+[05:32:40] BAR cartilage seed=2026 coef=0
+[05:32:40] BAR cartilage seed=2026 coef=100
+[05:34:44] BAR bone seed=42 coef=0
+[05:34:44] BAR bone seed=42 coef=100
+[05:34:44] BAR bone seed=123 coef=0
+[05:34:44] BAR bone seed=123 coef=100
+[05:36:09] BAR bone seed=456 coef=0
+[05:36:09] BAR bone seed=456 coef=100
+[05:36:09] BAR bone seed=789 coef=0
+[05:36:09] BAR bone seed=789 coef=100
+[05:37:34] BAR bone seed=2026 coef=0
+[05:37:34] BAR bone seed=2026 coef=100
+[05:37:34] BAR vessel seed=42 coef=0
+[05:37:34] BAR vessel seed=42 coef=100
+[05:39:18] BAR vessel seed=123 coef=0
+[05:39:18] BAR vessel seed=123 coef=100
+[05:39:18] BAR vessel seed=456 coef=0
+[05:39:18] BAR vessel seed=456 coef=100
+[05:41:08] BAR vessel seed=789 coef=0
+[05:41:08] BAR vessel seed=789 coef=100
+[05:41:08] BAR vessel seed=2026 coef=0
+[05:41:08] BAR vessel seed=2026 coef=100
+=== Barrier ablation DONE: Fri May 15 05:42:57 CST 2026 ===
+
+Outputs in: /root/results/ablations_20260515_0514
+/root/results/ablations_20260515_0514:
+barrier
+mgn
+run.log
+
+/root/results/ablations_20260515_0514/barrier:
+bone_barrier_100
+bone_coef0_seed123.log
+bone_coef0_seed2026.log
+bone_coef0_seed42.log
+bone_coef0_seed456.log
+bone_coef0_seed789.log
+bone_coef100_seed123.log
+bone_coef100_seed2026.log
+bone_coef100_seed42.log
+bone_coef100_seed456.log
+bone_coef100_seed789.log
+bone_no_barrier
+cartilage_barrier_100
+cartilage_coef0_seed123.log
+cartilage_coef0_seed2026.log
+cartilage_coef0_seed42.log
+cartilage_coef0_seed456.log
+cartilage_coef0_seed789.log
+cartilage_coef100_seed123.log
+cartilage_coef100_seed2026.log
+cartilage_coef100_seed42.log
+cartilage_coef100_seed456.log
+cartilage_coef100_seed789.log
+cartilage_no_barrier
+vessel_barrier_100
+vessel_coef0_seed123.log
+vessel_coef0_seed2026.log
+vessel_coef0_seed42.log
+vessel_coef0_seed456.log
+vessel_coef0_seed789.log
+vessel_coef100_seed123.log
+vessel_coef100_seed2026.log
+vessel_coef100_seed42.log
+vessel_coef100_seed456.log

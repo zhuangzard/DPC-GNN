@@ -1,0 +1,22 @@
+{
+  "tissue": "bone",
+  "ablation": "mgn_baseline",
+  "E_Pa": 10000000.0,
+  "E_kPa": 10000.0,
+  "nu": 0.3,
+  "rho": 1900.0,
+  "beam_Lx_m": 0.1,
+  "epochs": 2000,
+  "best_epoch": 1383,
+  "best_loss": -0.007545958273112774,
+  "tip_disp_mm": 0.5898965755477548,
+  "expected_tip_mm": 0.6989624999999999,
+  "relative_error_pct": 15.603973668436463,
+  "J_min": 0.9979715943336487,
+  "J_max": 1.0020298957824707,
+  "n_inverted": 0,
+  "training_time_s": 69.96010565757751,
+  "N_nodes": 400,
+  "N_elements": 1200,
+  "params": 238915
+}
